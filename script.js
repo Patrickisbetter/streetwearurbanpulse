@@ -104,7 +104,7 @@ smt.forEach((item) => {
 });
 
 function toSummary() {
-  window.location.href = "streetwearurbanpulse/summary.html";
+  window.location.href = "./summary.html";
 }
 
 const loadingFinished = document.querySelector(".loading-screen");
