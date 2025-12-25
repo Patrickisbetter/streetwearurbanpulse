@@ -1,4 +1,16 @@
-* {
+
+@font-face {
+  font-family: "Sprite-Graffiti-Shadow";
+  src: url("https://raw.githubusercontent.com/Patrickisbetter/streetwearurbanpulse/refs/heads/another/fonts/sprite-graffiti-shadow.otf?v=1731970347757");
+}
+
+@font-face{
+  font-family: "Sprite-Graffiti-Regular";
+  src: url("https://raw.githubusercontent.com/Patrickisbetter/streetwearurbanpulse/refs/heads/another/fonts/sprite-graffiti-regular.ttf?v=1733145576419");
+}
+
+
+*, ::after, ::before {
     box-sizing: border-box !important;
 }
 
@@ -12,7 +24,28 @@ body {
     color: white;
     width: 100%;
     height: 100vh;
-    margin: 0px;
+    margin: 1rem;
+    line-height: 1.5;
+    font-size: 26px;
+    padding-top: 0px;
+    margin: 0;
+    /*font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);*/
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+section > h1, section > h3{
+    width: fit-content;
+    margin: .83em auto .83em auto;
+    font-family: "Sprite-Graffiti-Shadow", sans-serif;
+
 }
 
 img {
@@ -75,17 +108,35 @@ header > section {
     z-index: 1;
     bottom: 0%;
     align-content: center;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     right: 0px;
     left: 0px;
     width: fit-content;
+    
 }
 
 
 #carousel_overlay > * {
     align-content: center;
     margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    gap: 4px;
+}
 
+#carousel_overlay > h2 {
+    margin-bottom: 20px;
+    font-family: "Sprite-Graffiti-Regular", sans-serif;
+    font-size: 5rem;
+
+}
+
+#carousel_overlay > div > button {
+    width: 29px;
+    height: 4px;
+    border: 0;
+    border-radius: 4px;
+    padding: 0px;
 }
 #carousel {
     display: flex;
