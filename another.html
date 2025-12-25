@@ -16,14 +16,7 @@
       href="https://cdn.glitch.global/6cbef633-445b-4314-9338-7fbd0357065d/Untitled%20design%20(1).png?v=1732751250292"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="anotherstyle.css" />
-    <!-- Bootstrap CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./anotherstyle.css" />
     <!-- Custom Icons -->
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
     <link
@@ -35,10 +28,14 @@
   </head>
   <body>
     <header>
-        <div></div>
+        <div id="newsline">
+            <p>Urban Pulse: Wear the Beat of the Streets</p>
+            <p>Streetwear That Moves with You</p>
+            <p>Pulse of the City, Worn by You</p>
+        </div>
         <section>
-            <nav>
-                <a href="./another.html"><img src="https://raw.githubusercontent.com/Patrickisbetter/streetwearurbanpulse/refs/heads/another/images/UPS%20Logo%202.PNG?v=1734028118152"/></a>
+            <nav id="navbar">
+                <a id="navbar_logo" href="./another.html"><img src="https://raw.githubusercontent.com/Patrickisbetter/streetwearurbanpulse/refs/heads/another/images/UPS%20Logo%202.PNG?v=1734028118152"/></a>
                 
                 <ul>
                     <li><a herf="#home">HOME</a></li>
@@ -47,16 +44,19 @@
                     <li><a href="#news">NEWS</a></li>
                     <li><a href="#shop">SHOP</a></li>
                     <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="./summary.html"><svg class="fi-padding" role="img" xmlns="http://www.w3.org/2000/svg" width="1000mm" height="1000mm" viewBox="0 0 1000 1000" style="width:1.33em; height:1.33em;vertical-align: middle;"><path id="path" fill="currentColor" d=" M 700 738C 672 738 650 760 650 788C 650 815 672 837 700 837C 728 837 750 815 750 788C 750 760 728 738 700 738C 700 738 700 738 700 738M 250 738C 222 738 200 760 200 788C 200 815 222 837 250 837C 278 837 300 815 300 788C 300 760 278 738 250 738C 250 738 250 738 250 738M 700 688C 755 688 800 733 800 788C 800 842 755 887 700 887C 645 887 600 842 600 788C 600 733 645 688 700 688C 700 688 700 688 700 688M 250 688C 305 688 350 733 350 788C 350 842 305 887 250 887C 195 887 150 842 150 788C 150 733 195 688 250 688C 250 688 250 688 250 688M 110 263C 110 263 193 512 193 512C 193 512 679 512 679 512C 679 512 720 263 720 263C 720 263 110 263 110 263M 75 213C 75 213 750 213 750 213C 757 213 764 216 769 221C 774 227 776 234 775 242C 775 242 725 542 725 542C 723 554 712 562 700 563C 700 563 175 563 175 563C 164 562 155 556 151 545C 151 545 51 245 51 245C 49 238 50 229 55 223C 59 216 67 213 75 213C 75 213 75 213 75 213M 850 163C 850 163 925 163 925 163C 934 162 942 167 947 175C 951 183 951 192 947 200C 942 208 934 213 925 213C 925 213 871 213 871 213C 871 213 800 642 800 642C 798 654 787 662 775 663C 775 663 200 663 200 663C 191 663 183 658 178 650C 174 642 174 633 178 625C 183 617 191 612 200 613C 200 613 754 613 754 613C 754 613 825 183 825 183C 827 171 838 163 850 163C 850 163 850 163 850 163" transform="translate(1000,0) scale(-1,1) "></path></svg></a></li>
+                    <li><a id="shopping_cart" href="./summary.html"><svg class="fi-padding" role="img" xmlns="http://www.w3.org/2000/svg" width="1000mm" height="1000mm" viewBox="0 0 1000 1000" style="width:1.33em; height:1.33em;vertical-align: middle;"><path id="path" fill="currentColor" d=" M 700 738C 672 738 650 760 650 788C 650 815 672 837 700 837C 728 837 750 815 750 788C 750 760 728 738 700 738C 700 738 700 738 700 738M 250 738C 222 738 200 760 200 788C 200 815 222 837 250 837C 278 837 300 815 300 788C 300 760 278 738 250 738C 250 738 250 738 250 738M 700 688C 755 688 800 733 800 788C 800 842 755 887 700 887C 645 887 600 842 600 788C 600 733 645 688 700 688C 700 688 700 688 700 688M 250 688C 305 688 350 733 350 788C 350 842 305 887 250 887C 195 887 150 842 150 788C 150 733 195 688 250 688C 250 688 250 688 250 688M 110 263C 110 263 193 512 193 512C 193 512 679 512 679 512C 679 512 720 263 720 263C 720 263 110 263 110 263M 75 213C 75 213 750 213 750 213C 757 213 764 216 769 221C 774 227 776 234 775 242C 775 242 725 542 725 542C 723 554 712 562 700 563C 700 563 175 563 175 563C 164 562 155 556 151 545C 151 545 51 245 51 245C 49 238 50 229 55 223C 59 216 67 213 75 213C 75 213 75 213 75 213M 850 163C 850 163 925 163 925 163C 934 162 942 167 947 175C 951 183 951 192 947 200C 942 208 934 213 925 213C 925 213 871 213 871 213C 871 213 800 642 800 642C 798 654 787 662 775 663C 775 663 200 663 200 663C 191 663 183 658 178 650C 174 642 174 633 178 625C 183 617 191 612 200 613C 200 613 754 613 754 613C 754 613 825 183 825 183C 827 171 838 163 850 163C 850 163 850 163 850 163" transform="translate(1000,0) scale(-1,1) "></path></svg></a></li>
                 </ul>
             </nav>
-            <div>
+            <div id="carousel_overlay">
                 <h2>URBAN PULSE STREETWEAR</h2>
-                <button></button>
-                <button></button>
-                <button></button>
+                <div>
+                    <button></button>
+                    <button></button>
+                    <button></button> 
+                </div>
+                
             </div>
-            <div>
+            <div id="carousel">
                 <picture>
                     <img src="https://raw.githubusercontent.com/Patrickisbetter/streetwearurbanpulse/refs/heads/another/images/Resize%20image%20project.png?v=1732746561664"/>
                 </picture>
@@ -165,7 +165,7 @@
         </div>
     </section>
     <section id="news">
-        <h3></h3>
+        <h3>HOT NEWS</h3>
         <details name='news-accordion'>
             <summary>Tyla Teams Up with Urban Pulse for Exclusive Streetwear Drop</summary>
             <p>Rising global music star Tyla is making waves in the fashion world with a brand-new collaboration with Urban Pulse Streetwear. The limited-edition collection, inspired by her hit songs and bold style, combines vibrant streetwear designs with Tyla’s signature flair. Featuring graphic tees, oversized hoodies, and statement sneakers, the collection will drop exclusively this December. Urban Pulse, known for its cutting-edge designs, is thrilled to work with Tyla, whose fashion- forward approach to her music and image has made her a style icon. Fans can get early access to the collection by signing up for VIP notifications on the Urban Pulse website. Stay tuned—this is one drop you won’t want to miss!</p>
@@ -181,92 +181,281 @@
 
     </section>
     <main id="shop">
+        <h3>2024 WINTER COLLECTION</h3>
+        <img src="https://raw.githubusercontent.com/Patrickisbetter/streetwearurbanpulse/refs/heads/another/images/Screenshot_2-12-2024_121442_www.canva.com.jpeg?v=1733159695379"/>
         <div>
-            <h3></h3>
-            <img src=""/>
-            <div>
+            <div class="shop-card">
                 <img src=""/>
                 <div>
-                    <h4></h4>
-                    <p></p>
-                    <a></a>
-                    <a></a>
+                <h4>Cozy Up in Style</h4>
+                    <p>$42.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
                 </div>
             </div>
-        <div>
-        <div>
-            <h3></h3>
-            <div>
+            <div class="shop-card">
                 <img src=""/>
                 <div>
-                    <h4></h4>
-                    <p></p>
-                    <a></a>
-                    <a></a>
+                <h4>Toyko Lightweight Windbreaker</h4>
+                    <p>$27.98</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
                 </div>
             </div>
-        <div>
-        <div>
-            <h3></h3>
-            <div>
+            <div class="shop-card">
                 <img src=""/>
                 <div>
-                    <h4></h4>
-                    <p></p>
-                    <a></a>
-                    <a></a>
+                <h4>Graffiti Print Fleece</h4>
+                    <p>$74.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
                 </div>
             </div>
-        <div>
-        <div>
-            <h3></h3>
-            <div>
+            <div class="shop-card">
                 <img src=""/>
                 <div>
-                    <h4></h4>
-                    <p></p>
-                    <a></a>
-                    <a></a>
+                <h4>Flight Bomber Jacket</h4>
+                    <p>$31.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
                 </div>
             </div>
+        </div>
+        <h3>HOODIES</h3>
         <div>
-        <img src=""/>
-        <div>
-            <h3></h3>
-            <div>
+            <div class="shop-card">
                 <img src=""/>
                 <div>
-                    <h4></h4>
-                    <p></p>
-                    <a></a>
-                    <a></a>
+                    <h4>Cozy Up in Style</h4>
+                    <p>$42.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
                 </div>
             </div>
-        <div>
-        <div>
-            <h3></h3>
-            <div>
+            <div class="shop-card">
                 <img src=""/>
                 <div>
-                    <h4></h4>
-                    <p></p>
-                    <a></a>
-                    <a></a>
+                    <h4>Urban Hoodies, Ultimate Comfort</h4>
+                    <p>$62.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
                 </div>
             </div>
-        <div>
-        <div>
-            <h3></h3>
-            <div>
+            <div class="shop-card">
                 <img src=""/>
                 <div>
-                    <h4></h4>
-                    <p></p>
-                    <a></a>
-                    <a></a>
+                    <h4>Stay Warm, Stay Bold</h4>
+                    <p>$45.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
                 </div>
             </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Street Style, Hoodie Vibes</h4>
+                    <p>$50.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <h3>JOGGERS</h3>
         <div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Move in Comfort</h4>
+                    <p>$50.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Joggers for Every Hustle</h4>
+                    <p>$29.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Casual Comfort, Bold Style</h4>
+                    <p>$20.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Street ready, Always comfortable</h4>
+                    <p>$15.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <h3>GRAPHIC TEES</h3>
+        <div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Graphic Tees, Ultimate Vibes</h4>
+                    <p>$30.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Art on Your Sleeve</h4>
+                    <p>$29.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Graphics that Pop</h4>
+                    <p>$25.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Wear the Art, Own the Look</h4>
+                    <p>$49.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <img src="https://raw.githubusercontent.com/Patrickisbetter/streetwearurbanpulse/refs/heads/another/images/URBAN%20PULSE%20WEAR%20URBAN%20PULSE%20WEAR%20URBAN%20PULSE%20WEAR%20URBAN%20PULSE%20WEAR%20(2).png?v=1733127090433"/>
+        <h3>CAPS</h3>
+        <div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Top Off Your Look</h4>
+                    <p>$20.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Crown Your streetwear</h4>
+                    <p>$15.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Elevate Your Look with Caps</h4>
+                    <p>$19.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Stay fresh, Stay Covered</h4>
+                    <p>$10.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <h3>BACKPACKS</h3>
+        <div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Carry Your Style</h4>
+                    <p>$78.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Pack It with Purpose</h4>
+                    <p>$37.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Where Function Meets Fashion</h4>
+                    <p>$59.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Backpacks for Every Journey</h4>
+                    <p>$67.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <h3>JEWERLRY</h3>
+        <div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Accessorize Your Edge</h4>
+                    <p>$45,000.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Jewels that Speak Volumes</h4>
+                    <p>$65,000.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>Shine in Every Detail</h4>
+                    <p>$50,000.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-card">
+                <img src=""/>
+                <div>
+                    <h4>The Finishing Touch to Your Style</h4>
+                    <p>$55,000.99</p>
+                    <a href="">BUY NOW</a>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
     </main>
     <section id="contact">
         <h3>CONTACT</h3>
@@ -274,13 +463,13 @@
             <fieldset>
                 <legend></legend>
                 <label for="intended_name"></label>
-                <input name="intended_name" type="text" placeholder="Enter Name"required></input>
+                <input id="intended_name" name="intended_name" type="text" placeholder="Enter Name" autocomplete="on" required></input>
                 <label for="email"></label>
-                <input name="email" type="email" placeholder="Enter Email" required></input>
+                <input id="email" name="email" type="email" placeholder="Enter Email" autocomplete="on" required></input>
                 <label for="phone_num"></label>
-                <input name="phone_num" type="tel" placeholder="Enter phone number (999-999-9999)"></input>
-                <label for="comment""></label>
-                <input name="comment" type="text" placeholder="Leave a comment here" required></input>
+                <input id="phone_num" name="phone_num" type="tel" placeholder="Enter phone number (999-999-9999)" autocomplete="on"></input>
+                <label for="comment"></label>
+                <input id="comment" name="comment" type="text" placeholder="Leave a comment here" autocomplete="on" required></input>
                 <input name="submit_contact" formmethod="get" type="submit"></input>
 
             </fieldset>
@@ -290,3 +479,7 @@
     </footer>
   </body>
   </html>
+  <!--       _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~-->
