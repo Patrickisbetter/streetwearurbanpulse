@@ -23,7 +23,7 @@ body {
     background-color: black;
     color: white;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     margin: 1rem;
     line-height: 1.5;
     font-size: 26px;
@@ -41,7 +41,7 @@ body {
     position: relative;
 }
 
-section > h1, section > h3{
+section > h1, section > h3, main > h3{
     width: fit-content;
     margin: .83em auto .83em auto;
     font-family: "Sprite-Graffiti-Shadow", sans-serif;
@@ -58,50 +58,61 @@ ul, ol {
     list-style-type: none;
 }
 
+#navbar {
+    display: flex;
+    background-color: red;
+    padding: 1vh 2vw 1vh 2vw;
+    height: 7vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    margin-right: -100%;
+    z-index: 2;
+    position: sticky;
+    top: 0px;
+    margin-top: 6vh;
+}
+#navbar_logo {
+    height: 100%;
+}
+#navbar > ul {
+    display: flex;
+    gap: 5px;
+}
+#shopping_cart {
+    margin-left: 10px;
+}
+
+
 header > section {
     contain: content;
 }
 
 #newsline {
-    width: 300%;
-    /* contain: content; */
+    width: 100%;
+    height: 6vh;
     align-content: center;
-    display: inline-flex;
+    display: inline-block;
 }
 #newsline > p {
     display: inline-block;
     font-size: 5vh;
     top: 0px;
-    margin: auto;
+    margin: 0;
     width: 100%;
     text-align: center;
+    float: left;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    padding: 0;
+    font-family: "Sprite-Graffiti-Shadow", sans-serif;
+    transform: translate(100vw);
+    transition: transform linear 10s;
+    position: relative;
+    left: 0px;
 }
 
-#navbar {
-    display: flex;
-    background-color: red;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    height: 7vh;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#navbar_logo {
-    height: 100%;
-}
-
-#navbar > ul {
-    display: flex;
-    gap: 5px;
-}
-
-#shopping_cart {
-    margin-left: 10px;
-}
 
 #carousel_overlay {
     position: absolute;
@@ -128,7 +139,9 @@ header > section {
     margin-bottom: 20px;
     font-family: "Sprite-Graffiti-Regular", sans-serif;
     font-size: 5rem;
-
+    text-align: center;
+    text-align: center;
+    line-height: 1;
 }
 
 #carousel_overlay > div > button {
@@ -153,6 +166,30 @@ header > section {
     backface-visibility: hidden;
 }
 
+#inspo > h1 {
+    font-size: 7vw;
+    color: rgba(225, 225, 225, 0.01);
+    background-image: url(https://raw.githubusercontent.com/Patrickisbetter/streetwearurbanpulse/refs/heads/another/images/grafiti2.jpg?v=1732232661900);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 8s ease-in-out 0s infinite behind_inspo;
+    transition: background-position-y ease-in-out 8s;
+    font-weight: 900;
+}
+
+@keyframes behind_inspo {
+    0% {background-position-x: center;}
+    25% {background-position-x: right;}
+    75% {background-position-x: left;}
+    100% {background-position-x: center;}
+
+}
+
+#trending h2 {
+    font-family: "Sprite-Graffiti-Shadow", sans-serif;
+
+}
 
 /* background-color: #e5e5f7;
 opacity: 0.8;
