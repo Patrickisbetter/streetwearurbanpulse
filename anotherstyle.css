@@ -167,7 +167,6 @@ header > section {
 }
 #carousel_overlay > div > .active {
     opacity: .8;
-    border: 2px solid red;
 }
 #carousel {
     display: flex;
